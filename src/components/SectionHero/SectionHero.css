@@ -1,0 +1,120 @@
+@import '../../marketplace.css';
+
+:root {
+  /*
+    These variables are available in global scope through ":root"
+    element (<html> tag). Variables with the same names are going to
+    overwrite each other if CSS Properties' (PostCSS plugin)
+    configuration "preserve: true" is used - meaning that variables
+    are left to CSS bundle. We are planning to enable it in the future
+    since browsers support CSS Properties already.
+ */
+
+  --SectionHero_desktopTitleMaxWidth: 625px;
+
+  --SectionHero_animation: {
+    animation-name: animationTitle;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+
+    visibility: hidden;
+    opacity: 1;
+    position: relative;
+  }
+}
+
+/* Animation for the hero elements */
+
+@keyframes animationTitle {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    top: -20px;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@media (min-width:1024px){
+  .searchService{
+    padding: 33px 32px 23px;
+    max-width: 441px;
+    max-height: 532px;
+  }
+
+  .heroButton {
+    @apply --SectionHero_animation;
+  
+    animation-delay: 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99px;
+    height: 48px;
+    background-color: #69238D;
+    color: white;
+    font-family: SofiaPro;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1;
+    letter-spacing: -1.08px;
+  }
+  .heroButton:hover{
+    text-decoration: none;
+    color: white;
+  }
+  .heroMainTitle {
+    font-family: sofia-pro-soft, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.05;
+    letter-spacing: -2.25px;
+    color: black;
+    padding-bottom: 40px;
+    margin:0;
+  
+    @apply --SectionHero_animation;
+    animation-delay: 0.5s;
+  }
+}
+
+.field{
+  @apply --SectionHero_animation;
+  animation-delay: 0.7s;
+}
+
+.label{
+
+  font-family: sofia-pro, sans-serif;
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: 1.5px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.input{
+  height: 48px;
+}
+
+.control{
+  padding-bottom: 24px;
+}
+
+.buttonContainer{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heroImage{
+  @apply --SectionHero_animation;
+  animation-delay: 0.7s;
+  margin-top: 50px;
+}
