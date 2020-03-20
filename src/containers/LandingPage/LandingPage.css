@@ -14,7 +14,31 @@
     align-items: center;
     margin: 36px 80px 204px; 
   }
-  
+
+  .loremContainer{
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
+  .serviceContainer{
+    margin: 0px 80px 80px;
+  }
+
+  .loremTitle{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1.44px;
+    color: black;
+    margin-bottom: 0;
+  }
+
+  .loremSubtitle{
+    font-size: 16px;
+    line-height: 1.77;
+    letter-spacing: -0.08px;
+    color: black;
+    margin-top: 5px;
+  }
 }
 
 

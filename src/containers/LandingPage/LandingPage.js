@@ -6,6 +6,8 @@ import { withRouter } from 'react-router-dom';
 import { injectIntl, intlShape } from '../../util/reactIntl';
 import { isScrollingDisabled } from '../../ducks/UI.duck';
 import config from '../../config';
+import GreySection from '../../components/GreySection/GreySection'
+import ServiceColumns from '../../components/ServiceColumns/ServiceColumns'
 import {
   Page,
   SectionHero,
@@ -61,7 +63,23 @@ export const LandingPageComponent = props => {
           <SectionHero className={css.hero} history={history} location={location} />
         </div>
       </div>
-      <div className="conainer"></div>
+      <div className={css.loremContainer}>
+        <p className={css.loremTitle}>Lorem Ipsum</p>
+        <p className={css.loremSubtitle}>Turpis sit a habitant et magnis</p>
+      </div>
+      <div className={css.serviceContainer}>
+        <ServiceColumns/>
+        <ServiceColumns/>
+      </div>
+      <GreySection/>
+      <div className={css.loremContainer}>
+        <p className={css.loremTitle}>Lorem Ipsum</p>
+        <p className={css.loremSubtitle}>Turpis sit a habitant et magnis</p>
+      </div>
+      <div className={css.serviceContainer}>
+        <ServiceColumns/>
+        <ServiceColumns/>
+      </div>
           <ul className={css.sections}>
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
