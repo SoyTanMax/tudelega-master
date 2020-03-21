@@ -21,7 +21,11 @@
   }
 
   .serviceContainer{
-    margin: 0px 80px 80px;
+    margin: 0px 80px;
+  }
+
+  .exploreContainer{
+    margin: 0px 70px 70px;
   }
 
   .loremTitle{

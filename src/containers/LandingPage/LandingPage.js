@@ -6,12 +6,13 @@ import { withRouter } from 'react-router-dom';
 import { injectIntl, intlShape } from '../../util/reactIntl';
 import { isScrollingDisabled } from '../../ducks/UI.duck';
 import config from '../../config';
-import GreySection from '../../components/GreySection/GreySection'
-import ServiceColumns from '../../components/ServiceColumns/ServiceColumns'
+import GreySection from '../../components/GreySection/GreySection';
+import ServiceColumns from '../../components/ServiceColumns/ServiceColumns';
+import ExploreButton from '../../components/ExploreButton/ExploreButton'
+
 import {
   Page,
   SectionHero,
-  SectionHowItWorks,
   SectionLocations,
   LayoutWrapperTopbar,
   LayoutWrapperFooter,
@@ -71,6 +72,9 @@ export const LandingPageComponent = props => {
         <ServiceColumns/>
         <ServiceColumns/>
       </div>
+      <div className={css.exploreContainer}>
+        <ExploreButton/>
+      </div>
       <GreySection/>
       <div className={css.loremContainer}>
         <p className={css.loremTitle}>Lorem Ipsum</p>
@@ -80,15 +84,26 @@ export const LandingPageComponent = props => {
         <ServiceColumns/>
         <ServiceColumns/>
       </div>
+      <div className={css.exploreContainer}>
+        <ExploreButton/>
+      </div>
+      <div className={css.loremContainer}>
+        <p className={css.loremTitle}>Lorem Ipsum</p>
+        <p className={css.loremSubtitle}>
+          Nunc in egestas cras auctor magna viverra quam egestas in sed augue ac quis in aenean <br></br>
+          ac faucibus rhoncus aliquet ultrices fringilla sapien donec
+        </p>
+      </div>
+      <div className={css.serviceContainer}>
+        <ServiceColumns/>
+      </div>
+      <div className={css.exploreContainer}>
+        <ExploreButton/>
+      </div>
           <ul className={css.sections}>
             <li className={css.section}>
               <div className={css.sectionContentFirstChild}>
                 <SectionLocations />
-              </div>
-            </li>
-            <li className={css.section}>
-              <div className={css.sectionContent}>
-                <SectionHowItWorks />
               </div>
             </li>
           </ul>
