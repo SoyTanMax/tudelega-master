@@ -1,0 +1,39 @@
+@media (min-width:1024px){
+
+    .loremSection{
+        background-color: rgb(240, 240, 240);
+        height: 288px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+
+    .neque{
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.01;
+        letter-spacing: -1.6px;
+        color: black;
+    }
+      
+    .loremContainer{
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .platea{
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.02;
+        letter-spacing: -0.63px;
+        color: black;
+    }
+    
+    .sed{
+        font-family: sofia-pro, sans-serif;
+        font-size: 18px;
+        line-height: 1.32;
+        letter-spacing: -0.81px;
+    }
+}

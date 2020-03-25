@@ -1,0 +1,24 @@
+.serviceLabel{
+    font-size: 14px;
+    line-height: 1.42;
+    letter-spacing: -0.35px;
+    color: gray;
+    margin-bottom: 3px;
+}
+
+.serviceDescription{
+    color: black;
+    font-size: 18px;
+    line-height: 1.23;
+    letter-spacing: -0.81px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.servicePrice{
+    color: black;
+    font-size: 18px;
+    line-height: 1.42;
+    letter-spacing: -0.99px;
+    margin: 0;
+}
