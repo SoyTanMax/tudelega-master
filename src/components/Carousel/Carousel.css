@@ -1,0 +1,63 @@
+.slick-prev:before {
+    color: black;
+}
+
+.slick-next:before {
+    color: black;
+}
+
+@media (min-width:320px){
+    .carouselImage{
+        width: 150px;
+        height: 200px;
+        padding-bottom: 8px;
+        background-size: cover;
+    }
+    .carouselLabel{
+        font-family: SofiaPro;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.42;
+        letter-spacing: -0.48px;
+    }
+    .content{
+        font-family: SofiaPro;
+        font-size: 12px;
+        line-height: 1.29;
+        letter-spacing: -0.06px;
+        width: 150px;
+        text-align: start;
+    }
+    .categoria{
+        padding-top: 16px;
+        padding-right: 6px;
+        padding-left: 6px;
+    }
+}
+
+@media (min-width:1024px){
+    
+    .carouselImage{
+        min-width: 243px;
+        min-height: 324.5px;
+        padding-bottom: 8px;
+    }
+    .carouselLabel{
+        font-family: SofiaPro;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.42;
+        letter-spacing: -0.54px;
+    }
+    .content{
+        font-family: SofiaPro;
+        font-size: 14px;
+        line-height: 1.42;
+        letter-spacing: -0.28px;
+    }
+    .categoria{
+        padding-top: 24px;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+}

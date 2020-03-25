@@ -64,6 +64,9 @@ export const LandingPageComponent = props => {
           <SectionHero className={css.hero} history={history} location={location} />
         </div>
       </div>
+      <div className={css.carouselContainer}>
+        <Carousel/>
+      </div>
       <div className={css.loremContainer}>
         <p className={css.loremTitle}>Lorem Ipsum</p>
         <p className={css.loremSubtitle}>Turpis sit a habitant et magnis</p>
