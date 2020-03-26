@@ -8,7 +8,9 @@ import { isScrollingDisabled } from '../../ducks/UI.duck';
 import config from '../../config';
 import GreySection from '../../components/GreySection/GreySection';
 import ServiceColumns from '../../components/ServiceColumns/ServiceColumns';
-import ExploreButton from '../../components/ExploreButton/ExploreButton'
+import ExploreButton from '../../components/ExploreButton/ExploreButton';
+import Carousel from '../../components/Carousel/Carousel';
+import Carousel2 from '../../components/Carousel-2/Carousel2';
 
 import {
   Page,
@@ -64,6 +66,9 @@ export const LandingPageComponent = props => {
           <SectionHero className={css.hero} history={history} location={location} />
         </div>
       </div>
+      <div className={css.loremContainer}>
+        <p className={css.categoriasTitle}>Categorías</p>
+      </div>
       <div className={css.carouselContainer}>
         <Carousel/>
       </div>
@@ -79,6 +84,13 @@ export const LandingPageComponent = props => {
         <ExploreButton/>
       </div>
       <GreySection/>
+      <div className={css.loremContainer}>
+        <p className={css.serviciosTitle}>Servicios por hora</p>
+        <p className={css.loremSubtitle}>Turpis sit a habitant et magnis</p>
+      </div>
+      <div className={css.carouselContainer}>
+        <Carousel2/>
+      </div>
       <div className={css.loremContainer}>
         <p className={css.loremTitle}>Lorem Ipsum</p>
         <p className={css.loremSubtitle}>Turpis sit a habitant et magnis</p>

@@ -12,7 +12,7 @@
   .heroContainer{
     display: flex;
     align-items: center;
-    margin: 36px 80px 204px; 
+    margin: 36px 80px; 
   }
 
   .loremContainer{
@@ -45,6 +45,23 @@
   }
   .carouselContainer{
     margin: 0 80px;
+    padding-bottom: 64px;
+  }
+  .categoriasTitle{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1.44px;
+    color: black;
+    margin-bottom: 0;
+    padding-bottom: 24px;
+  }
+  .serviciosTitle{
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: -1.44px;
+    color: black;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
 
